@@ -1,0 +1,52 @@
+generated: '2026-07-20'
+method: searched
+source: https://purchaser.ai/api-and-integrations (public API & Integrations overview)
+name: Purchaser API Conventions
+description: >-
+  Cross-cutting runtime semantics for the Purchaser sourcing API, captured from
+  the public API & Integrations overview. The full OpenAPI 3.1 reference and
+  interactive explorer are available to Purchaser customers behind
+  docs.purchaser.ai / app.purchaser.ai login.
+auth:
+  style: api_key
+  notes: >-
+    API-key based authentication with team and environment scoping; keys can be
+    rotated without downtime. SSO (SAML/OIDC) governs the application UI.
+idempotency:
+  supported: true
+  mechanism: idempotency-key
+  scope: POST requests
+  notes: Idempotency keys provided for safe retries of POST operations.
+pagination:
+  supported: unknown
+  notes: Not documented on the public overview; defined in the customer OpenAPI spec.
+versioning:
+  style: uri
+  pattern: /api/v1/
+  policy: additive-only
+  notes: Versioned endpoints (/api/v1/) with additive-only changes.
+request_tracing:
+  request_id_header: true
+  notes: A request ID is included in all response headers for debugging.
+rate_limiting:
+  strategy: sliding-window
+  signaling: unknown
+  notes: Sliding-window rate limiting; header signaling not documented publicly.
+error_envelope:
+  shape: unknown
+  notes: Error format not documented on the public overview.
+webhooks:
+  supported: true
+  management_endpoint: /webhooks
+  notes: Webhook support for event-driven integrations; event catalog is customer-gated.
+resources:
+  - /rfqs
+  - /vendors
+  - /conversations
+  - /quotes
+  - /files
+  - /webhooks
+cross_links:
+  authentication: authentication/purchaser-authentication.yml
+  lifecycle: lifecycle/purchaser-lifecycle.yml
+  webhooks: asyncapi/purchaser-webhooks.yml

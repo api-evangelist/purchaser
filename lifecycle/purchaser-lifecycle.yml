@@ -1,0 +1,24 @@
+generated: '2026-07-20'
+method: searched
+source: https://purchaser.ai/api-and-integrations (public API & Integrations overview)
+name: Purchaser API Lifecycle
+description: >-
+  Versioning and lifecycle posture for the Purchaser sourcing API, captured from
+  the public API & Integrations overview.
+versioning:
+  style: uri
+  current: v1
+  pattern: /api/v1/
+  policy: additive-only
+  notes: Versioned endpoints with additive-only changes; no breaking changes within a version.
+deprecation:
+  policy_published: false
+  sunset_header: unknown
+  deprecation_header: unknown
+  notes: No public deprecation/sunset policy documented.
+status_page:
+  url: null
+  notes: No public status page discovered.
+sla:
+  published: false
+  notes: No public SLA documented; enterprise terms are contract-based.

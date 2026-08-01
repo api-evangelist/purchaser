@@ -1,8 +1,30 @@
 aid: purchaser
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/purchaser.png
 name: Purchaser
-description: 'Purchaser is a company surfaced as a portfolio company of homebrew and added to the API
-  Evangelist network as a stub for enrichment. Sector: ai. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: >-
+  Purchaser is an AI-powered RFQ (Request for Quotation) intelligence platform for
+  capital-intensive industries such as EPC, LNG, transmission & distribution, and
+  specialty-equipment manufacturing. It ingests unstructured vendor quotes from PDFs,
+  emails, and spreadsheets and normalizes them into structured, defensible sourcing
+  data so procurement teams can level bids apples-to-apples, surface deviations and
+  gaps, and produce audit-ready award traceability. Purchaser exposes a REST API
+  (OpenAPI 3.1) covering the full sourcing lifecycle — RFQs, vendors, conversations,
+  quotes, files, and webhooks — with API-key auth, idempotency keys, versioned
+  /api/v1/ endpoints, sliding-window rate limiting, and connectors for SAP S/4HANA,
+  Oracle ERP Cloud, Microsoft Dynamics 365, Infor, and more. Based in Lexington, KY
+  and backed by Homebrew.
 url: https://raw.githubusercontent.com/api-evangelist/purchaser/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,11 +34,27 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Ai
-apis: []
+- Procurement
+- Sourcing
+- RFQ
+- Supply Chain
+- Construction
+- Enterprise
+apis:
+- name: Purchaser API
+  description: >-
+    REST API (OpenAPI 3.1) covering the sourcing lifecycle — RFQs, vendors,
+    conversations, quotes, files, and webhooks. API-key authentication with team
+    and environment scoping; the full reference and interactive explorer are
+    available to Purchaser customers. Base URL is customer-provisioned under /api/v1/.
+  humanURL: https://purchaser.ai/api-and-integrations
+  properties:
+  - type: Documentation
+    url: https://docs.purchaser.ai
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
@@ -25,3 +63,44 @@ maintainers:
 common:
 - type: Website
   url: https://purchaser.ai
+- type: DeveloperPortal
+  url: https://docs.purchaser.ai
+- type: Documentation
+  url: https://docs.purchaser.ai
+- type: APIReference
+  url: https://purchaser.ai/api-and-integrations
+- type: Blog
+  url: https://purchaser.ai/blog
+- type: Support
+  url: https://purchaser.ai/contact
+- type: SignUp
+  url: https://app.purchaser.ai/login
+- type: Login
+  url: https://app.purchaser.ai/login
+- type: Conventions
+  url: conventions/purchaser-conventions.yml
+- type: Idempotency
+  url: conventions/purchaser-conventions.yml
+- type: Authentication
+  url: authentication/purchaser-authentication.yml
+- type: Lifecycle
+  url: lifecycle/purchaser-lifecycle.yml
+- type: Webhooks
+  url: asyncapi/purchaser-webhooks.yml
+- type: Conformance
+  url: conformance/purchaser-conformance.yml
+- type: Compliance
+  url: security/purchaser-trust-center.yml
+- type: TrustCenter
+  url: security/purchaser-trust-center.yml
+- type: DomainSecurity
+  url: security/purchaser-domain-security.yml
+- type: DataModel
+  url: data-model/purchaser-data-model.yml
+- type: MCPServer
+  url: mcp/purchaser-mcp.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 9
+  pass: local-v1

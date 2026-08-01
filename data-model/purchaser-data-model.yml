@@ -1,0 +1,55 @@
+generated: '2026-07-20'
+method: derived
+source: >-
+  Derived from the published API resource categories on
+  https://purchaser.ai/api-and-integrations and the product capability
+  descriptions. Relationships are inferred from the sourcing domain, not from a
+  published schema.
+name: Purchaser Data Model
+description: >-
+  Entity graph for the Purchaser sourcing API, derived from the publicly listed
+  API resources (/rfqs, /vendors, /conversations, /quotes, /files, /webhooks).
+  Field-level structure is defined in the customer-gated OpenAPI 3.1 spec.
+entities:
+  - name: rfq
+    endpoint: /rfqs
+    description: A request for quotation / sourcing event.
+  - name: vendor
+    endpoint: /vendors
+    description: A supplier engaged for an RFQ.
+  - name: conversation
+    endpoint: /conversations
+    description: Vendor engagement thread tied to an RFQ.
+  - name: quote
+    endpoint: /quotes
+    description: A vendor's bid submission, normalized for comparison.
+  - name: file
+    endpoint: /files
+    description: Uploaded source document (PDF/email/spreadsheet) backing a quote or RFQ.
+  - name: webhook
+    endpoint: /webhooks
+    description: Registered event-notification endpoint.
+relationships:
+  - from: quote
+    to: rfq
+    kind: belongs_to
+    confidence: high
+    basis: Bid leveling compares quotes within a single RFQ.
+  - from: quote
+    to: vendor
+    kind: belongs_to
+    confidence: high
+    basis: Each quote is submitted by a vendor.
+  - from: conversation
+    to: rfq
+    kind: belongs_to
+    confidence: medium
+    basis: Vendor conversations occur in the context of an RFQ.
+  - from: file
+    to: quote
+    kind: belongs_to
+    confidence: medium
+    basis: Quotes are extracted/normalized from uploaded documents.
+notes: >-
+  Relationships are domain-inferred and marked with confidence; no id-prefix or
+  field-level references were available from public sources.

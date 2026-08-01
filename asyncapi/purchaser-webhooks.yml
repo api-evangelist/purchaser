@@ -1,0 +1,23 @@
+generated: '2026-07-20'
+method: searched
+source: https://purchaser.ai/api-and-integrations (public API & Integrations overview)
+type: Webhooks
+name: Purchaser Webhooks
+description: >-
+  Purchaser publishes webhook support for event-driven integrations across the
+  sourcing lifecycle. Webhooks are created and managed through the /webhooks
+  API resource. The concrete event-type catalog is documented for customers in
+  the gated OpenAPI 3.1 reference; no AsyncAPI document is published publicly,
+  so specific event names are not asserted here to avoid fabrication.
+management_endpoint: /webhooks
+transport: https-callback
+event_domains:
+  - rfqs
+  - vendors
+  - conversations
+  - quotes
+  - files
+events: []
+notes: >-
+  Event surface confirmed publicly ("webhook support for event-driven
+  integrations"); individual event payloads and names are customer-gated.

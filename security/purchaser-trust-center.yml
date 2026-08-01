@@ -1,0 +1,22 @@
+generated: '2026-07-20'
+method: searched
+source: https://purchaser.ai (public product infrastructure statement)
+type: TrustCenter
+name: Purchaser Trust & Compliance
+description: >-
+  Compliance posture published by Purchaser. Captured from public product
+  statements; no dedicated trust-center portal was discovered.
+trust_center_url: null
+certifications:
+  - name: SOC 2 Type II
+    status: compliant
+    evidence: >-
+      "SOC 2 Type II compliant with SSO, role-based access control, and ERP
+      integration capabilities." (purchaser.ai)
+controls:
+  - single-sign-on (SSO)
+  - role-based access control (RBAC)
+notes: >-
+  No public security.txt, bug-bounty program, or standalone trust portal was
+  found by probe. Compliance detail (audit reports) is provided under customer
+  NDA.
