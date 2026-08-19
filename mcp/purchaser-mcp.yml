@@ -1,44 +1,46 @@
 generated: '2026-07-20'
 method: derived
-source: >-
-  Candidate tool list derived from the publicly documented API resources on
-  https://purchaser.ai/api-and-integrations. No official Purchaser MCP server
-  was found.
+source: Candidate tool list derived from the publicly documented API resources on https://purchaser.ai/api-and-integrations.
+  No official Purchaser MCP server was found.
 type: MCPServer
 name: Purchaser MCP (candidate)
 status: candidate
-description: >-
-  A candidate MCP tool surface mapped from Purchaser's publicly listed REST
-  resources. Not an official Purchaser MCP server; endpoints/operationIds are
-  defined in the customer-gated OpenAPI 3.1 spec, so tool inputs are left
-  unspecified rather than invented.
+description: A candidate MCP tool surface mapped from Purchaser's publicly listed REST resources. Not
+  an official Purchaser MCP server; endpoints/operationIds are defined in the customer-gated OpenAPI 3.1
+  spec, so tool inputs are left unspecified rather than invented.
 transport: unknown
 tools:
-  - name: list_rfqs
-    resource: /rfqs
-    description: List sourcing events (RFQs).
-  - name: get_rfq
-    resource: /rfqs/{id}
-    description: Retrieve a single RFQ.
-  - name: create_rfq
-    resource: /rfqs
-    description: Create a new RFQ (idempotency key supported).
-  - name: list_vendors
-    resource: /vendors
-    description: List vendors.
-  - name: list_quotes
-    resource: /quotes
-    description: List submitted quotes for evaluation.
-  - name: get_quote
-    resource: /quotes/{id}
-    description: Retrieve a normalized quote.
-  - name: list_conversations
-    resource: /conversations
-    description: List vendor engagement conversations.
-  - name: upload_file
-    resource: /files
-    description: Upload a source document (PDF/email/spreadsheet).
-  - name: register_webhook
-    resource: /webhooks
-    description: Register an event-notification endpoint.
+- name: list_rfqs
+  resource: /rfqs
+  description: List sourcing events (RFQs).
+- name: get_rfq
+  resource: /rfqs/{id}
+  description: Retrieve a single RFQ.
+- name: create_rfq
+  resource: /rfqs
+  description: Create a new RFQ (idempotency key supported).
+- name: list_vendors
+  resource: /vendors
+  description: List vendors.
+- name: list_quotes
+  resource: /quotes
+  description: List submitted quotes for evaluation.
+- name: get_quote
+  resource: /quotes/{id}
+  description: Retrieve a normalized quote.
+- name: list_conversations
+  resource: /conversations
+  description: List vendor engagement conversations.
+- name: upload_file
+  resource: /files
+  description: Upload a source document (PDF/email/spreadsheet).
+- name: register_webhook
+  resource: /webhooks
+  description: Register an event-notification endpoint.
 notes: Candidate only. Confirm operationIds and inputs against the customer OpenAPI spec.
+deployment:
+  mode: none
+  verified: derived
+  tools: 9
+  checked: '2026-08-12'
+  source: catalog MCP census
