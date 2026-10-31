@@ -64,6 +64,102 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Purchaser is a company surfaced as a portfolio company of homebrew and added to the API Evangelist network as a stub for enrichment. Sector: ai. This profile is a lead awaiting the enrichment pipeline.
+Purchaser is an AI-powered RFQ (Request for Quotation) intelligence platform for capital-intensive industries such as EPC, LNG, transmission & distribution, and specialty-equipment manufacturing. It ingests unstructured vendor quotes from PDFs, emails, and spreadsheets and normalizes them into structured, defensible sourcing data so procurement teams can level bids apples-to-apples, surface deviations and gaps, and produce audit-ready award traceability. Purchaser exposes a REST API (OpenAPI 3.1) covering the full sourcing lifecycle — RFQs, vendors, conversations, quotes, files, and webhooks — with API-key auth, idempotency keys, versioned /api/v1/ endpoints, sliding-window rate limiting, and connectors for SAP S/4HANA, Oracle ERP Cloud, Microsoft Dynamics 365, Infor, and more. Based in Lexington, KY and backed by Homebrew.
 
-Backed by: homebrew — https://purchaser.ai
+**Areas:** Company · Artificial Intelligence · Procurement · Sourcing · RFQ · Supply Chain · Construction · Enterprise
+
+## Purchaser on APIs.io
+
+Everything profiled for Purchaser is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/purchaser/](https://apis.io/providers/purchaser/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [Purchaser API](https://apis.io/apis/purchaser/purchaser-api/) — REST API (OpenAPI 3.1) covering the sourcing lifecycle — RFQs, vendors, conversations, quotes, files, and webhooks. API-key authentication with team and…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### AsyncAPI (1)
+
+Event-driven and webhook contracts.
+
+- [Purchaser Webhooks](https://apis.io/asyncapis/purchaser/purchaser-webhooks/)
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [Purchaser MCP (candidate)](https://apis.io/servers/purchaser/purchaser-mcp-candidate/)
+
+#### Security (3)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Purchaser Authentication](https://apis.io/security/purchaser/purchaser-authentication/)
+- [Purchaser Domain Security](https://apis.io/security/purchaser/purchaser-domain-security/)
+- [Purchaser Trust Center](https://apis.io/security/purchaser/purchaser-trust-center/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://purchaser.ai)
+- [Documentation](https://docs.purchaser.ai)
+- [API reference](https://purchaser.ai/api-and-integrations)
+- [Sign up](https://app.purchaser.ai/login)
+- [Support](https://purchaser.ai/contact)
+- [Blog](https://purchaser.ai/blog)
+
+## API Evangelist rating
+
+**Kin Score 27.8** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 57.1 |
+| Contract quality | 39.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 7.9 |
+| Developer ergonomics | 26.2 |
+| Access clarity | 15.8 |
+
+**Agent readiness 23.0** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | documented (partial credit) |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | yes |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 20.0** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/purchaser/](https://apis.io/providers/purchaser/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Purchaser: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/purchaser/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
